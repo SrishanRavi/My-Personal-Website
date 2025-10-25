@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% block title %}Home — My Website{% endblock %}
+{% block content %}
+	<!-- Header -->
+	<div class="py-5 text-center">
+		<h1 class="display-4">Srishan's Personal Website</h1>
+	</div>
+
+	<!-- Theme switcher removed per user request -->
+
+	<main>
+
+		<!-- About me (above the carousel) -->
+		<div class="container mb-4">
+			<div class="card shadow-sm">
+				<div class="card-body">
+					<h2 class="card-title">About me</h2>
+					<p class="card-text">Hello,
+
+                        My name is Srishan, and I am an aspiring aerospace engineer pursuing an AS level education. I am passionate about science, technology, politics, and history.
+
+                        Throughout my academic journey, I have actively participated in various Model United Nations (MUN) and Science, Technology, Engineering, and Mathematics (STEM) competitions. Additionally, I possess proficiency in machine learning.
+
+                        I am deeply committed to continuous learning and am eager to explore emerging technologies and scientific advancements. 
+                    </p>
+					<p><a href="{{ url_for('about') }}" class="btn btn-outline-primary">Read more</a></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container mb-4">
+			<h2 class="h3 text-center">My Projects</h2>
+		</div>
+
+		<!-- Carousel Section -->
+		<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<svg aria-hidden="true" class="bd-placeholder-img" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+					<div class="container">
+						<div class="carousel-caption text-start">
+							<h1>Project Aquasweep</h1>
+							<p class="opacity-75">A robotics project I did in grade 9 to clean oil spills from small water bodies</p>
+							<p><a class="btn btn-lg btn-primary" href="{{ url_for('projects') }}">Click here to know more</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<svg aria-hidden="true" class="bd-placeholder-img" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem Ipsum</p>
+							<p><a class="btn btn-lg btn-primary" href="{{ url_for('projects') }}">Click here to know more</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<svg aria-hidden="true" class="bd-placeholder-img" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+					<div class="container">
+						<div class="carousel-caption text-end">
+							<h1>Lorem Ipsum</h1>
+							<p>Lorem Ipsum</p>
+							<p><a class="btn btn-lg btn-primary" href="{{ url_for('projects') }}">Click here to know more</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+		<!-- Marketing messaging and featurettes -->
+		<div class="container marketing">
+			<div class="row">
+				<div class="col-lg-4 text-center">
+					<svg class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+					<h2 class="fw-normal">My Github</h2>
+					<p>Check out some of my work</p>
+					<p><a class="btn btn-secondary" href="#">Add Github link here</a></p>
+				</div>
+				<div class="col-lg-4 text-center">
+					<svg class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+					<h2 class="fw-normal">My Blog</h2>
+					<p>Check my blog on Tech, Science, politics and history</p>
+					<p><a class="btn btn-secondary" href="#">Blog Link here</a></p>
+				</div>
+				<div class="col-lg-4 text-center">
+					<svg class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+					<h2 class="fw-normal">Heading</h2>
+					<p>And lastly this, the third column of representative placeholder content.</p>
+					<p><a class="btn btn-secondary" href="#">View details »</a></p>
+				</div>
+			</div>
+
+			<!-- Featurettes removed per user request -->
+		</div>
+
+		<!-- Footer -->
+		
+	</main>
+
+{% endblock %}

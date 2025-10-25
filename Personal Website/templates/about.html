@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}About — My Website{% endblock %}
+{% block content %}
+  <div class="py-5"> <h1 class="display-5 fw-bold text-white">About Me</h1> <div class="col-lg-6 mx-auto"> <p class="fs-5 mb-4">Hello,
+
+    My name is Srishan, and I am an AS level student with a passion for aerospace engineering. I am eager to contribute to the betterment of humanity in the field of STEM, with the goal of improving lives.
+
+    My interests lie in science, technology, history, and politics. I have participated in STEM competitions and Model United Nations (MUN) events. I possess strong leadership skills and have successfully organized two events during my grade 10 year.
+
+    I am also a grade 3 pianist and enjoy listening to and playing my favourite music. 
+
+  </p>
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+    <a href="{{ url_for('projects') }}" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">View my projects</a>
+    <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg px-4">Contact me</a>
+  </div>
+  </div>
+  </div>
+{% endblock %}

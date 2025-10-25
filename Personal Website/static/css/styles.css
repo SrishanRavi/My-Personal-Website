@@ -1,0 +1,116 @@
+/* Theme switcher removed: styles for switcher/button were removed to simplify frontend */
+
+/* Carousel styling */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+/* Featurettes */
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* Custom theme colors and brand palette for dark theme */
+:root {
+  /* Brand colors - adjusted for dark theme */
+  --brand-green: #4ade80; /* brighter green for dark bg */
+  --brand-green-rgb: 74,222,128;
+  --brand-brown: #d4a373; /* lighter brown for dark bg */
+  --brand-brown-rgb: 212,163,115;
+  --brand-blue: #60a5fa; /* brighter blue for dark bg */
+  --brand-blue-rgb: 96,165,250;
+
+  /* Bootstrap variable overrides */
+  --bs-primary: var(--brand-green);
+  --bs-primary-rgb: var(--brand-green-rgb);
+  --bs-secondary: var(--brand-brown);
+  --bs-info: var(--brand-blue);
+  
+  /* Dark theme specific overrides */
+  --bs-body-bg: #212529;
+  --bs-body-color: #f8f9fa;
+  --bs-link-color: var(--brand-blue);
+  --bs-link-hover-color: #93c5fd;
+}
+
+/* Navbar and global overrides for dark theme */
+.navbar {
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--bs-body-color);
+}
+.navbar .nav-link:hover {
+  color: var(--brand-green) !important;
+}
+
+/* Footer styling for dark theme */
+.footer {
+  border-color: rgba(255,255,255,.1);
+  width: 100%;
+  background-color: var(--bs-body-bg);
+}
+
+/* Sticky footer styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+main {
+  /* Add some bottom padding to prevent content from being hidden behind footer */
+  padding-bottom: 4rem;
+}
+
+/* Button color adjustments for dark theme */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-outline-primary {
+  color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+  color: #fff !important;
+}
+
+/* Links */
+a {
+  color: var(--brand-blue);
+}
